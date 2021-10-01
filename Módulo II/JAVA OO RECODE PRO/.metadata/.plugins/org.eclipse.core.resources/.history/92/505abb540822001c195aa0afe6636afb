@@ -1,0 +1,14 @@
+package ExemplosMoodle;
+import java.util.Scanner;
+public class Atalho {
+	
+	
+	public static int lerInt () {
+		
+		Scanner s = new Scanner (System.in);
+		
+		return s.nextInt();
+	
+	}
+
+}

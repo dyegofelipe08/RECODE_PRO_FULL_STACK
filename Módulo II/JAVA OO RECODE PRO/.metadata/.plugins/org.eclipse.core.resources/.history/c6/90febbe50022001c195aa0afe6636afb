@@ -1,0 +1,15 @@
+package ExemplosMoodle;
+import java.util.Scanner;
+public class AtalhoEntrada {
+
+	
+	
+	public static void lerInt (int a){
+		
+		Scanner s = new Scanner (System.in);
+		
+		
+	}
+	
+	
+}

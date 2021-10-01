@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let precoInicial
+        let precoFinal
+
+        precoInicial = Number(prompt('Digite o valor deste produto (R$):'))
+        precoFinal = precoInicial * 0.85
+
+        if (precoFinal<=500){
+            alert('Você irá pagar R$'+precoFinal+' neste produto e o mesmo está classificado como BARATO.')
+        }
+        else{
+            alert('Você irá pagar R$'+precoFinal+' neste produto e o mesmo está classificado como CARO.')
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

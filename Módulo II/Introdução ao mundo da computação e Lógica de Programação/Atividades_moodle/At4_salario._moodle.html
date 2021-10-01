@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salario = 0
+        let reajuste = 0
+        let novoSalario = 0
+
+        salario =Number(prompt('Digite o salário atual do funcionário (R$): '))
+        reajuste =(Number(prompt('Digite o percentual do reajuste a ser aplicado ao salário deste funcionário(%): '))/100)+1
+        novoSalario = salario * reajuste
+
+        alert('O novo salário deste trabalhador é: R$'+novoSalario+'.')
+
+
+    </script>
+    
+</body>
+</html>

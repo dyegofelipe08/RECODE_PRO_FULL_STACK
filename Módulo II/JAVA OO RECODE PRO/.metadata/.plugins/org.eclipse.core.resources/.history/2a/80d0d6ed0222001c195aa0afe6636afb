@@ -1,0 +1,16 @@
+package ExemplosMoodle;
+import java.util.Scanner;
+public class AtalhoEntrada {
+
+	
+	
+	public void Start (){
+		
+		Scanner s = new Scanner (System.in);
+	
+		
+		
+	}
+	
+	
+}
