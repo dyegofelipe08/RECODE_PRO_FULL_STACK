@@ -1,7 +1,8 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="ExemplosMoodle.AtalhoEntrada"><rhs name\="ExemplosMoodle.AtalhoEntrada"/></lhs><lhs name\="ExemplosMoodle.Atalho"><rhs name\="ExemplosMoodle.Atalho"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
 content_assist_number_of_computers=12
 eclipse.preferences.version=1
 org.eclipse.jdt.ui.formatterprofiles.version=21
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="java" deleted\="false" description\="Atalho para a utliza\u00E7\u00E3o da classe Scanner" enabled\="true" name\="scan">${\:import(java.util.Scanner)}&\#13;\r\nScanner ler \= new Scanner(System.in);&\#13;\r\nSystem.out.print("${texto}");&\#13;\r\n${type\:link('int ','Float ','String ', 'double ')} ${variavel} \= ler.next${expr\:link('Int','Float','Line', 'double')}();&\#13;\r\nler.close();</template><template autoinsert\="true" context\="java" deleted\="false" description\="dasfdaf" enabled\="true" name\="teste">System.out.printf("${texto}");&\#13;\r\n${type\:link('int ','Float ','String ')} ${variavel} \= teclado.next${expr\:link('Int','Float','Line')}();&\#13;\r\n${cursor}</template></templates>
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true

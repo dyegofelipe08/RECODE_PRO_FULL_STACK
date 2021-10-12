@@ -1,0 +1,22 @@
+package Exemplos;
+
+import java.util.Scanner;
+
+public class Ex2ForTabuada {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner ler = new Scanner(System.in);
+		System.out.print("Digite um valor inteiro para visualizar a tabuada do mesmo: ");
+		int  valor = ler.nextInt();
+		int mult = 0;
+		ler.close();
+		
+		for (int i=1;i<=10;i++) {
+			mult = valor * i;
+			System.out.println(valor+" x "+i+" = "+mult);
+		}
+	}
+
+}

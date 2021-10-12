@@ -1,0 +1,29 @@
+package Exemplos;
+
+import java.util.Scanner;
+
+public class SwitchCaseEx2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		System.out.print("Em que ano o Brasil foi tetra campeão? ");
+		Scanner ler = new Scanner(System.in);
+
+		int  ano = ler.nextInt();
+		
+		ler.close();
+		
+		
+		switch (ano) {
+		case 1994: 
+			System.out.println("Parabéns! Você acertou!");
+			break;
+		default:
+			System.out.println("Você errou!");
+		}
+
+	}
+
+}

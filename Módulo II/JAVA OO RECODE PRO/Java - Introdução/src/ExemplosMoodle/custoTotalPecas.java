@@ -8,7 +8,7 @@ public class custoTotalPecas {
 
 		// Atalho a = new Atalho();
 
-		// Scanner s = new Scanner (System.in);
+		Scanner s = new Scanner (System.in);
 
 		
 		int i = 1;
@@ -23,22 +23,22 @@ public class custoTotalPecas {
 		do {
 			int j = 0;
 			System.out.println("Digite o código do produto: ");
-			cod[j] = Atalho.lerInt();
+			cod[j] = s.nextInt();
 			System.out.println("Digite o preço deste produto (R$): ");
-			precoItem[j] = Atalho.lerDouble();
+			precoItem[j] = s.nextDouble();
 			System.out.println("Digite a quantidade que você deseja deste produto: ");
-			qt[j] = Atalho.lerInt();
+			qt[j] = s.nextInt();
 			subTotal[j] = precoItem[j] * qt[j];
 			precoTotal = precoTotal + subTotal[j];
 			j += 1;
 	
 			System.out.println("Deseja continuar comprando? (1) - SIM / (2) - NÂO");
-			continuar = Atalho.lerInt();
+			continuar = s.nextInt();
 			if ((continuar != 1) && (continuar != 2)) {
 				do {
 					System.out.println("Opção inválida!");
 					System.out.println("Deseja continuar comprando? (1) - SIM / (2) - NÂO");
-					continuar = Atalho.lerInt();
+					continuar = s.nextInt();
 				} while ((continuar != 1) && (continuar != 2));
 			}
 		} while (continuar == 1);
