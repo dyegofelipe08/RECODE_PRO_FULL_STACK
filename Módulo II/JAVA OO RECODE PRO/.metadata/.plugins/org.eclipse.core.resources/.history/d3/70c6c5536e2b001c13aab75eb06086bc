@@ -1,0 +1,23 @@
+package Exemplos;
+
+import java.sql.SQLException;
+
+public class ExTryCatch02 {
+
+	public static void main(String[] args) {
+		
+		try {
+			Conta c = new Conta ();
+			c.deposita(100);
+		}catch(Exception e) {
+			System.out.println("A classe Conta não foi definida");
+		}
+//		catch(IllegalArgumentException e1) {
+//			System.out.println("Houve uma ILLegalArgumentException ao depositar");
+//		}catch (SQLException e) {
+//			System.out.println("Houve um SQLException ao depositar.");
+//			}
+
+	}
+
+}

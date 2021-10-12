@@ -1,0 +1,10 @@
+package Exemplos;
+
+public class ExTryCatch01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
