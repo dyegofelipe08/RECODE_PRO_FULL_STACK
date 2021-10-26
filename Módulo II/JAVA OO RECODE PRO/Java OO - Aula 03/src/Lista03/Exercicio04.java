@@ -40,7 +40,7 @@ public class Exercicio04 {
 //				
 //			}
 //		}
-//		
+//		exercicio pendente 
 		ler.close();
 		
 

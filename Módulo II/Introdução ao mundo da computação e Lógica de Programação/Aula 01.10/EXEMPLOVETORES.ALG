@@ -1,5 +1,6 @@
 Algoritmo "ExemploVetores"
 
+
 Var
    numeros : vetor [1..10] de inteiro
    i: inteiro

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body style="background-color: paleturquoise; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >
+    <h1 style="color: blue; text-align: center;"><b>Ficha de Cadastro</b></h1>
+    <center><img src="imagens/sonhoDeCons.jpg" alt="cadastro.png" style="height: 200px; width: 500px;"><br></center>
+    
+    <p style="text-align: center;">Confira a tabela abaixo e depois faça o seu cadastro selecionando em seguida qual é o seu sonho de consumo.</p><br>
+    <h2 style="color: red; text-align: center;"><b>Formulário de escolha</b></h2>
+    <table border="1" align="center">
+        <caption><b>Sonho de consumo</b></caption>
+        <tr>
+            <th>TIPO:</th>
+            <td>Carro</td>
+            <td>Moto</td>
+            <td>Barco</td>
+            <td>Bicicleta</td>
+            
+        </tr>
+        <tr>
+            <th>VALOR:</th>
+            <td>R$ 90.000,00</td>
+            <td>R$ 8.000,00</td>
+            <td>R$ 5.000,00</td>
+            <td>R$ 2.000,00</td>
+        </tr>
+    </table>
+    <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" name="nome" id="nome"><br><br>
+        <label for="snome">Sobrenome:</label><br>
+        <input type="text" name="snome" id="snome"><br><br>
+        <label for="end">Endereço:</label><br>
+        <input type="text" name="end" id="end"><br><br>
+        <label for="idade">Idade:</label><br>
+        <input type="text" name="idade" id="idade"><br><br>
+        <label for="email">E-mail:</label><br>
+        <input type="email" name="email" id="email"><br><br>
+        <label for="data">Data de nascimento:</label><br>
+        <input type="date" name="data" id="data"><br><br>
+        <label for="sexo">Sexo:</label><br>
+        <input type="radio" value="masculino" name="sexo" id="sexo">
+        <label for="masculino" style="color: orange;">Masculino</label><br>
+        <input type="radio" value="feminino" name="sexo" id="sexo">
+        <label for="feminino" style="color: orange;">Feminino</label><br>
+        <input type="radio" value="outros" name="sexo" id="sexo">
+        <label for="outros" style="color: orange;" >Outros</label><br><br>
+        <select name="opcao" id="opcao">
+            <option value="" selected>SELECIONE UMA OPÇÃO</option>
+            <option value="carro" id="opcao">Carro</option>
+            <option value="moto" id="opcao">Moto</option>
+            <option value="barco" id="opcao">Barco</option>
+            <option value="bicicleta" id="opcao">Bicicleta</option>
+        </select><br><br>
+        <input type="button" value="Enviar">
+
+    </form>
+
+    
+</body>
+</html>
