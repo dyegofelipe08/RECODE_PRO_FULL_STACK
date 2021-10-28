@@ -1,0 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#formaPagamento{
+    color: red;
+}
+.menu a {
+    color: white;
+    
+}
+.menu{
+    background-color: red;
+}
