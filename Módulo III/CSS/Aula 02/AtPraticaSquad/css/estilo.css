@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+}
+.divCorpo{
+    background-color: gray;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    margin-top: 0rem;
+    padding: 10rem;
+
+
+}
+h1{
+    text-align: center;
+}
+.divTitulo{
+    background-color: darkgrey;
+    margin-left: rempx;
+    margin-right: rempx;
+    padding: 15rem;
+    margin-top: 0%;
+    margin-bottom: 0px;
+}
