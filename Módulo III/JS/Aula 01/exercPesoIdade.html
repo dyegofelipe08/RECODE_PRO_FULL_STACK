@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Prompt</title>
+</head>
+<body>
+    <script>
+        let idade = prompt("Qual é a sua idade?");
+        let peso = prompt("Qual é o seu peso?")
+        idade = parseInt(idade);
+        peso = parseFloat(peso);
+
+        if((idade<30) && (peso<80)){
+            console.log("Levando uma vida saudável");
+        }else{
+            console.log("Você precisa moderar na sua alimentação!");
+        }
+        
+    </script>
+</body>
+</html>
