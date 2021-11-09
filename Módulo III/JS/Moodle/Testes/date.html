@@ -1,0 +1,39 @@
+|
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Date</title>
+    <script>
+
+        //console.log(dataHoraAtual);
+        function horaFormatada(textoDeEntrada) {
+            if (textoDeEntrada == undefined ) {
+                return "...";
+            }
+                
+            
+                let data = new Date();
+                let hora = data.getHours();
+                let min = data.getMinutes();
+                let seg = data.getSeconds();
+
+                let hora_formatada = hora + ":" + min + ":" + seg + " " + textoDeEntrada;
+                return hora_formatada;
+            }
+
+        console.log(horaFormatada("Testando função "));
+        conosole.log( horaFormatada() );
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

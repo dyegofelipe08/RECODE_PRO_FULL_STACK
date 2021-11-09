@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <style>
+        body {
+            text-align: center;
+            background: #283048;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #859398, #283048);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #859398, #283048);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        button {
+            width: 200px;
+            height: 30px;
+            border-radius: 30px;
+
+        }
+        input{
+            height: 30px;
+            width: 200px;
+            border-radius: 30px;
+        }
+    </style>
+    <script>
+        function somar(n1, n2) {
+            return alert("O resultado da soma é: " + (n1 + n2));
+        }
+        function subtrair(n1, n2) {
+            return alert("O resultado da subtração é: " + (n1 - n2));
+        }
+        function multiplicar(n1, n2) {
+            return alert("O resultado da multiplicação é: " + (n1 * n2));
+
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Calculadora</h2>
+    <form>
+        <label for="n1">Valor 1: </label><br><br>
+        <input type="text" name="num1" id="num1" placeholder=" Digite aqui..."><br><br>
+        <label for="n1">Valor 2: </label><br><br>
+        <input type="text" name="num2" id="num2" placeholder=" Digite aqui..."><br><br>
+        <button onclick="somar( Number(num1.value),Number(num2.value))">SOMAR</button>
+        <button onclick="subtrair( Number(num1.value),Number(num2.value))">SUBTRAIR</button>
+        <button onclick="multiplicar( Number(num1.value),Number(num2.value))">MULTIPLICAR</button>
+
+    </form>
+
+</body>
+
+</html>

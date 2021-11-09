@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de uso do DOM</title>
+    <script async>
+        function trocarCor(){
+            
+            document.getElementById("inf").style.backgroundColor= "red";
+
+        }
+        function trocarTexto(){
+            document.getElementById("inf").innerHTML = prompt("Digite o texto que deseja adcionar ao parágrafo: ");
+        }
+    </script>
+</head>
+<body>
+    <h2> CLIQUE NO BOTÃO PARA ALTERAR AS INFORMAÇÕES DO PARÁGRAFO</h2>
+    <p id="inf" ></p>
+    <p>
+        
+        <button onclick="trocarTexto()">Clique aqui para adcionar texto ao parágrafo</button>
+        <button onclick="trocarCor()" >Clique aqui para trocar a cor para vermelhor</button> 
+    </p>
+ 
+    
+    
+</body>
+</html>

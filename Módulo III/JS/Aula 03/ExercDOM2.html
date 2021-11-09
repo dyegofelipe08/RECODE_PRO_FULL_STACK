@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--Criar um arquivo HTML com o nome que quiser;
+Criar uma tag <style> na tag <head> para configurar as bordas das tags <div>;
+border: 1px solid black;
+margin: 5px;
+Criar duas tags <div> com a referência das classes;
+Criar uma função para alterar a cor da primeira tag <div>;
+Criar uma função para trocar o backgroundcolor da primeira tag <div>;
+Criar um botão para executar a função;-->
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div{
+            border: 1px solid black;
+            margin: 5px;
+        }
+    </style>
+
+    <script>
+        function alterarCor(){
+            document.getElementsByClassName("div")[0].style.backgroundColor = "red";
+            
+        }
+
+
+
+        
+    </script>
+
+    <title>Exercicio Jquery</title>
+</head>
+<body>
+    <div class="div">
+        <p>
+            PRIMEIRA DIV
+        </p>
+    </div>
+    <div class="div">
+        <p>
+            SEGUNDA DIV
+        </p>
+
+    </div>
+    <button onclick="alterarCor()">Clique aqui</button>
+    
+</body>
+</html>

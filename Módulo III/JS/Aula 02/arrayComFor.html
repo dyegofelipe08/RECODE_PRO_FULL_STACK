@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Array com for e length</title>
+</head>
+<body>
+    <h1>Exemplo de Array com uso de for e length</h1>
+
+
+    <script>
+        let frutas=["Banana","Laranja","Manga","Pêra","Morango"];
+        let i, text="";
+
+        for(i=0;i<frutas.length;i++){
+            if (i%2==0){
+                text +=frutas[i]+ " está num índice par.<br>"
+            }else{
+                text +=frutas[i]+ " está num índice ímpar.<br>"
+            }
+        }
+        document.write(text);
+
+
+
+
+    </script>
+    
+</body>
+</html>

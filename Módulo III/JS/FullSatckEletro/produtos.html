@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos - Full Stack Eletro</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="Js/script.js" ></script>
+</head>
+
+<body>
+    <!--Início do menu-->
+
+    <nav class="menu">
+        <a href="index.html"><img width="150px" src="imagens/logoPagInicial.png" alt="logoPagInicial"></a onclick="destaque(this)">
+        <a href="produtos.html">Nossos Produtos</a>
+        <a href="lojas.html">Nossas lojas</a>
+        <a href="contato.html">Nossos Contatos</a>
+    </nav>
+
+
+    <!--fim do menu-->
+    <header>
+        <h2>Produtos</h2>
+        <hr>
+    </header>
+
+    <section class="categorias">
+        <h3>Categorias</h3>
+        <ol>
+            <li onclick="exibirTodos()">Todos(12)</li>
+            <li onclick="exibirCategoria('geladeira')">Geladeiras(5)</li>
+            <li onclick="exibirCategoria('fogao')">Fogões (2)</li>
+            <li onclick="exibirCategoria('microondas')">Microondas(2) </li>
+            <li onclick="exibirCategoria('lavadoraRoupas')">Lavadora de roupas(2)</li>
+            <li onclick="exibirCategoria('lavaLoucas')"> Lava-louças(1)</li>
+        </ol>
+    </section>
+    <section class="produtos">
+        <div class="box_produto" id="geladeira" >
+            <img src="imagens/Produtos/geladeira_brastemp_cinza.webp" alt="geladeira_brastemp_cinza" width="120px" onclick="destaque(this)"> 
+            <br>
+            <p>Geladeira cinza frost free Brastemp 540 litros</p>
+            <hr>
+            <p><strike>R$ 6.389,99</strike><br></p>
+            <p class="preco">R$ 5.019,00</p>
+
+        </div>
+        <div class="box_produto" id="lavaLoucas" >
+            <img src="imagens/Produtos/lava_loucas_brastemp.jpg" alt="lava_loucas_brastemp " width="120px" onclick="destaque(this)">
+            <br>
+            <p>Lava louças Brastemp</p>
+            <hr>
+            <p><strike>R$ 6.100,99</strike><br></p>
+            <p class="preco">R$ 5.800,00</p>
+
+        </div>
+        <div class="box_produto" id="lavadoraRoupas" >
+            <img src="imagens/Produtos/maquina_avar_roupas_consul.webp" alt="maquina_avar_roupas_consul" width="120px" onclick="destaque(this)">
+            <br>
+            <p>Máquina de lavar roupas Consul 15Kg</p>
+            <hr>
+            <p><strike>R$ 4.500,00</strike><br></p>
+            <p class="preco">R$ 3.899,90</p>
+
+        </div>
+        <div class="box_produto" id="geladeira" >
+            <img src="imagens/Produtos/geladeira_brastemp_branca.jpg" alt="geladeira_brastemp_branca" width="120px" onclick="destaque(this)">
+            <br>
+            <p>Geladeira branca frost free Brastemp 540 litros</p>
+            <hr>
+            <p><strike>R$ 5.389,99</strike><br></p>
+            <p class="preco">R$ 4.019,00</p>
+    
+        </div>
+        <div class="box_produto" id="fogao" >
+            <img src="imagens/Produtos/fogao_itatiaia.webp" alt="fogao_itatiaia" width="120px" onclick="destaque(this)">
+            <br>
+            <p>Fogão Itatiaia 4 bocas Glass</p>
+            <hr>
+            <p><strike>R$ 1.220,99</strike><br></p>
+            <p class="preco">R$ 950,99</p>
+            
+        </div>
+        <div class="box_produto" id="microondas" >
+            <img src="imagens/Produtos/microondas_eletrolux.jpg" alt="microondas_eletrolux" width="120px" onclick="destaque(this)">
+            <br>
+            <p>Microondas Eletrolux 20 litros</p>
+            <hr>
+            <p><strike>R$ 889,99</strike><br></p>
+            <p class="preco">R$ 519,99,00</p>
+        
+        </div>
+        <div class="box_produto" id="fogao" >
+            <img src="imagens/Produtos/fogao_consul.jpg" alt="fogao_consul" width="120px" onclick="destaque(this)">
+            <br>
+            <p>Fogão Consul 4 bocas</p>
+            <hr>
+            <p><strike>R$ 589,00</strike><br></p>
+            <p class="preco">R$ 419,00</p>
+            
+        </div>
+        <div class="box_produto" id="microondas" >
+            <img src="imagens/Produtos/microondas_philco.webp" alt="microondas_philco" width="120px" onclick="destaque(this)">
+            <br>
+            <p> Microondas Philco Cinza 30 litros</p>
+            <hr>
+            <p><strike>R$ 1.629,00</strike><br></p>
+            <p class="preco">R$ 1.399,00</p>
+            
+        </div>
+        <div class="box_produto" id="lavadoraRoupas" >
+            <img src="imagens/Produtos/maquina_lavar_roupas_cinza.jpg" alt="lavaRoupas_brastemp_cinza" width="120px" onclick="destaque(this)">
+            <br>
+            <p> Máquina de lavar roupas Brastemp 20kg</p>
+            <hr>
+            <p><strike>R$ 6.389,99</strike><br></p>
+            <p class="preco">R$ 5.019,00</p>
+            
+        </div>
+        <div class="box_produto" id="geladeira" >
+            <img src="imagens/Produtos/geladeira_brastemp_branca.jpg" alt="geladeira_brastemp_cinza" width="120px" onclick="destaque(this)">
+            <br>
+            <p> Geladeira cinza frost free Brastemp 540 litros</p>
+            <hr>
+            <p><strike>R$ 6.389,99</strike><br></p>
+            <p class="preco">R$ 5.019,00</p>
+            
+            
+        </div>
+        <div class="box_produto" id="geladeira" >
+            <img src="imagens/Produtos/geladeira_brastemp_cinza.webp" alt="geladeira_brastemp_cinza" width="120px" onclick="destaque(this)">
+            <br>
+            <p> Geladeira cinza frost free Brastemp 540 litros</p>
+            <hr>
+            <p><strike>R$ 6.389,99</strike><br></p>
+            <p class="preco">R$ 5.019,00</p>
+           
+        </div>
+        <div class="box_produto" id="geladeira" >
+            <img src="imagens/Produtos/geladeira_brastemp_branca.jpg" alt="geladeira_brastemp_cinza" width="120px" onclick="destaque(this)">
+            <br>
+            <p> Geladeira cinza frost free Brastemp 540 litros</p>
+            <hr>
+            <p><strike>R$ 6.389,99</strike><br></p>
+            <p class="preco">R$ 5.019,00</p>
+
+        </div>
+
+    </section>
+
+    <footer id="rodape">
+        <h4 id="formaPagamento">Formas de pagamento</h4>
+        <img style="width: 500px" src="imagens/pngegg.png" alt="forma_pag" onclick="destaque(this)">
+        <p>&copy; Recode Pro</p>
+    </footer>
+
+</body>
+
+</html>

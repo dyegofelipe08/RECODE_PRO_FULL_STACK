@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de uso de funções</title>
+    <script>
+        function calcMedia(n1,n2){
+            
+            return ((n1+n2)/2);
+        }
+    </script>
+</head>
+<body>
+    <h2>MÉDIA ESCOLAR</h2>
+    <p>
+     RESULTADO DO ALUNO:
+    </p>
+   
+    <script>
+       let media = calcMedia (Number(prompt("Digite a primeira nota: ")) , Number(prompt("Digite a segnda nota: ")));
+       console.log(media);
+
+        if(media>=7){
+            document.write("ALUNO APROVADO");
+
+        }else{
+            document.write("ALUNO REPROVADO")
+        }
+    </script>
+    
+</body>
+</html>

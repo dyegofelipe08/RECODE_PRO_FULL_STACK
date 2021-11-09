@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Objeto</title>
+</head>
+<body>
+    <h1>Exemplo de Objeto</h1>
+
+
+    <script>
+
+        let pessoa = new Object();
+        pessoa.nome = "Dyego";
+        pessoa.sNome= "Felipe";
+        pessoa.exibirNome = function(){
+            return this.nome +" "+this.sNome+"<br>";
+        }
+
+    
+        let pessoa2 = {
+            
+            idade:"28 anos.",
+            endereco:"Rua 203",
+            exibirDados: function(){
+                return this.idade + " "+ this.endereco;
+            }
+
+
+        }
+        document.write(pessoa.exibirNome());
+        document.write(pessoa2.exibirDados());
+       
+
+    </script>
+    
+</body>
+</html>
