@@ -1,0 +1,16 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+    text-align: center;
+}
+div {
+    font-family:consolas;
+    border: black dotted;
+    border-radius: 20px;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    padding: 15px;
+}

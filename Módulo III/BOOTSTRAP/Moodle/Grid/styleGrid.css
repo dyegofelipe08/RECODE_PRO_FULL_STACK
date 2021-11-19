@@ -1,0 +1,45 @@
+html, body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: #7159c1;
+
+}
+header{
+    background: yellow;
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; Pode ser dessa forma */
+    grid-area: h;
+    
+  
+
+}
+main{
+    background: blue;
+    /* grid-column: 1/2; pode ser dessa forma para determinar inicio e fim do elemento no grid */
+   grid-area: m;
+
+}
+aside{
+    background: green;
+    grid-area: a;
+    
+    
+}
+footer{
+    background: red;
+    grid-area: f;
+   
+}
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "h h" /* Vai de header a header*/
+                         "m a" /* Vai de main a aside*/
+                         "f f" ;/*Vai de footer a footer. Obs. Pode-se utilizar qualquer nome para determinar os nomes das áreas*/
+    
+    
+}

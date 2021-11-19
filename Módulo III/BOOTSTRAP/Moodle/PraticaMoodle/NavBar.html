@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>NavBar</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+
+        <a href="#" class="navbar-brand">NavBar</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapseNavbar">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Início</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownProdutos" data-toggle="dropdown">Produtos</a>
+                    <div class="dropdown-menu bg-primary">
+                        <a href="#" class="dropdown-item text-white">Celulares</a>
+                        <a href="#" class="dropdown-item text-white">Notebooks</a>
+                        <a href="#" class="dropdown-item text-white">Desktops</a>
+                        <a href="#" class="dropdown-item text-white">Tablets</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Nossas Lojas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Sobre</a>
+                </li>
+                <form class="form-inline">
+                    <input type="text" name="busca" id="busca" class="form-control mr-sm-2" placeholder="Buscar">
+                    <button class="btn btn-light" type="submit">Buscar</button>
+                </form>
+            </ul>
+        </div>
+    </nav>
+
+
+    <form class="container">
+        <label for="Fnome">Nome:</label><br>
+        <input type="text" name="Fnome" id="Fnome" placeholder="Seu nome..."
+            class="form-control border border-primary"><br>
+        <label for="Lnome">Sobrenome:</label><br>
+        <input type="text" name="Lnome" id="Lnome" placeholder="Seu sobrenome..."
+            class="form-control border border-primary"><br>
+        <label for="cpf">CPF:</label><br>
+        <input type="text" name="cpf" id="cpf" placeholder="Apenas números..." maxlength="11"
+            class="form-control border border-primary"><br>
+
+        <div>
+            <span>
+                <input type="radio" name="checkSexo" id="male" value="masculino">
+                <label for="masculino">Masculino</label>
+            </span>
+            <span>
+                <input type="radio" name="checkSexo" id="fame" value="feminino">
+                <label for="feminino">Feminino</label>
+            </span>
+            <span>
+                <input type="radio" name="checkSexo" id="noInforme" value="Nao informado">
+                <label for="Nao informado">Prefiro não informar</label>
+            </span>
+        </div>
+        <br>
+        <div>
+            <label for="estadodos" class="text-primary">Escolha o estado</label>
+            <select name="estados" id="estados" class="bg-secondary text-white">
+                <option value="pe">Pernambuco</option>
+                <option value="pb">Paraíba</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="ce">Ceará</option>
+                <option value="ba">Bahia</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="receberEmails">
+            <label for="receberEmails" class="text-info">Aceito receber e-mails com novidades</label><br>
+            <input type="checkbox" name="receberPromo">
+            <label for="receberPromo" class="text-info">Aceito receber e-mails com ofertas de promoções</label>
+        </div>
+        <button type="button" class="btn btn-primary mb-2 mr-sm-2 btn-block">Cadastrar</button>
+        <button type="reset" class="btn btn-outline-warning float-right btn-block">Reset</button>
+
+
+    </form>
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

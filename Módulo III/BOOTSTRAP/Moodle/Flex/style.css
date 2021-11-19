@@ -1,0 +1,39 @@
+#content{
+    background: #e7eef5;
+    height: 500px;
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start
+
+}
+.item{
+    
+    width: 100px;
+    height: 100px;
+    color: black;
+    -webkit-box-shadow: 0px 2px 8px -1px;
+    background: white;
+    margin: 5px;
+    flex-grow:0 ; /*Ocupamento do resto da largura da div*/
+    flex-shrink:1 ; /*Encolhe a div*/
+    flex-basis:65px ;/*Define a largura de cada elemento caso não tenha*/
+    flex: 0 1 auto; /*Forma de escrever as configurações grow shrink e basis em uma só linha */
+}
+.item:nth-child(1){
+    flex-grow: 1;
+}
+/* .item:nth-child(1){
+    order: 4;
+}
+.item:nth-child(2){
+    order: 2;
+}
+.item:nth-child(3){
+    order: 3;
+}
+.item:nth-child(4){
+    order: 1;
+} Uma forma de ordenar os elemntos filhos*/

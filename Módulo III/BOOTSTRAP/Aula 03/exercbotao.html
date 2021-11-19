@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <title>Geoprocessamento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Aqui criamos o layou do botão -->
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button1 {border-radius: 50%;}
+        
+    </style>
+    
+    <script>
+        // Aqui tratamos da função para aparecer a informação -->
+        function envio() 
+        {
+            document.getElementById("demo").innerHTML = "fotos enviadas para o site da Prefeitura";
+        }
+    </script>
+</head>
+<body>
+    <!-- Aqui tratamos do cabeçalho do jumbotron -->
+    <div class="jumbotron card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+        <div class="text-gray text-center py-3 px-3">
+            <div>
+                <h2 class="card-title h1-responsive pt-3 mb-3 font-bold"><strong>Sistema de Geoprocessamento</strong></h2>
+                <p class="mx-5 mb-5">Neste Projeto faremos o envio das plantas de georeferenciamento de Belo Horizonte</p>
+                
+                <button class="button button1" onclick="envio()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="text-warning text-center py-3 px-3">
+            <div>
+                <h2 id="demo"></h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
