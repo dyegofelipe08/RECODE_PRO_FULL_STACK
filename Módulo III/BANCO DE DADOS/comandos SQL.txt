@@ -1,0 +1,68 @@
+		CRIAR BANCO DE DADOS (1) OU DELETAR (2)
+
+1- CREATE DATABASE nomeBancoDeDados;
+
+2- DROP DATABASE nomeBancoDeDados;	
+________________________________//___________________________________________________________//____________________
+
+
+		CRIAR TABELA
+
+CREATE TABLE nomeTabela(nomeColuna tipo not Null, nomeColuna tipo not Null, nomeColuna tipo not Null)
+________________________________//___________________________________________________________//____________________
+
+
+		INSERIR VALORES
+
+INSERT INTO nomeTabela(nomesDasColunas, nomesDasColunas, nomesDasColunas)VALUES('dados', 'dados', 'dados', 'dados')
+________________________________//___________________________________________________________//____________________
+
+
+		CONSULTAR VALORES
+
+SELECT nomeDaColuna, nomeDaColuna FROM nomeTabela 
+
+
+		SELECIONANDO REGISTROS
+
+SELECT nomeDaColuna, nomeDaColuna FROM nomeTabela WHERE idade < 18 and sexo ='f'
+
+________________________________//___________________________________________________________//____________________
+
+
+		RENOMEAR TABELA
+
+CREATE TABLE nomeAtualTabela TO nomeNovoTabela
+
+
+________________________________//___________________________________________________________//____________________
+
+		ALTERAR TABELA (COLUNAS)
+
+	1- ADICIONAR COLUNA NA TABELA
+
+ALTER TABLE nomeDaTabela ADD COLUMN nomeDaColuna Tipo null
+
+	2- ALTERAR COLUNA E SEU TIPO
+
+ALTER TABLE nomeDaTabela CHANGE nomeDaColuna nomeNovoDaColuna Tipo null
+
+	3- APAGAR COLUNA
+
+ALTER TABLE nomeDaTabela drop nomeDaColuna
+
+
+________________________________//___________________________________________________________//____________________
+
+		ATUALIZAR REGISTRO (CÉLULAS)
+
+UPDATE nomeDaTabela set nomeDaColuna = 'novovalor' WHERE id = 3
+
+UPDATE nomeDaTabela set nome = 'sjdsl', idade = 14, email = 'fasjd@sdj.com' WHERE id=14
+
+
+		DELETAR REGISTRO (LINHAS)
+
+DELETE FROM nomeDaTabela WHERE idade = 20 and sexo = 'f'
+
+
