@@ -1,0 +1,15 @@
+
+select pessoas.id_pes, pessoas.nome, count(telefone.num_tel)
+from pessoas, telefone
+where pessoas.id_pes = telefone.id_pes_tel
+group by pessoas.id_pes, pessoas.nome;select pessoas.id_pes, pessoas.nome
+from pessoas, telefone
+where pessoas.id_pes = telefone.id_pes_telselect pessoas.id_pes, pessoas.nome, avg(pessoas.idade)
+from pessoas, telefone
+where pessoas.id_pes = telefone.id_pes_tel
+group by pessoas.id_pes, pessoas.nome;select pessoas.id_pes, pessoas.nome, avg(pessoas.idade)
+from pessoas, telefone
+where pessoas.id_pes = telefone.id_pes_tel
+group by pessoas.id_pes, pessoas.nome
+having avg(pessoas.idade) < 19;
+

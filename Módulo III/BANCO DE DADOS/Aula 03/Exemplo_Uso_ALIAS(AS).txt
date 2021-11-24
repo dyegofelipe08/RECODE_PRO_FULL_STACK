@@ -1,0 +1,3 @@
+select p.nome as nome_pessoa, t.num_tel as telefone
+from pessoas as p, telefone as t
+where p.id_pes = t.id_pes_tel;

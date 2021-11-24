@@ -1,0 +1,5 @@
+Mensagem 547, Nível 16, Estado 0, Linha 106
+A instrução INSERT conflitou com a restrição do FOREIGN KEY "FK__itens_ped__fk_nu__412EB0B6". O conflito ocorreu no banco de dados "loja", tabela "dbo.pedido", column 'num_pedido'.
+A instrução foi finalizada.
+
+Horário de conclusão: 2021-11-24T09:33:54.9768354-03:00
