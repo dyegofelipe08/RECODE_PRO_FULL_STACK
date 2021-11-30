@@ -26,3 +26,5 @@ foreign key (fk_id_autor) references autores (id_autor),
 foreign key (fk_id_editora) references editoras (id_editora)
 
 );
+
+

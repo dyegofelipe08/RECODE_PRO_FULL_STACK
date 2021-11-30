@@ -1,0 +1,16 @@
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\bin\Debug\net5.0\ImparPar.exe
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\bin\Debug\net5.0\ImparPar.deps.json
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\bin\Debug\net5.0\ImparPar.runtimeconfig.json
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\bin\Debug\net5.0\ImparPar.runtimeconfig.dev.json
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\bin\Debug\net5.0\ImparPar.dll
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\bin\Debug\net5.0\ref\ImparPar.dll
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\bin\Debug\net5.0\ImparPar.pdb
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\obj\Debug\net5.0\ImparPar.csproj.AssemblyReference.cache
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\obj\Debug\net5.0\ImparPar.GeneratedMSBuildEditorConfig.editorconfig
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\obj\Debug\net5.0\ImparPar.AssemblyInfoInputs.cache
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\obj\Debug\net5.0\ImparPar.AssemblyInfo.cs
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\obj\Debug\net5.0\ImparPar.csproj.CoreCompileInputs.cache
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\obj\Debug\net5.0\ImparPar.dll
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\obj\Debug\net5.0\ref\ImparPar.dll
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\obj\Debug\net5.0\ImparPar.pdb
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\ImparPar\obj\Debug\net5.0\ImparPar.genruntimeconfig.cache

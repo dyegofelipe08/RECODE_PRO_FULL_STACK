@@ -65,7 +65,7 @@ insert into cliente (nome_cli, endereco_cli, cidade_cli,cep_cli,uf_cli) values
 ('Bernadete Oliveira', 'Rua D', 'Suzano', '08700126', 'SP'),
 ('Carlos Soares', 'Rua E', 'Salvador', '08700126', 'BA');
 
---select * from cliente;
+select * from cliente;
 
 insert into vendedor (nome_vend,salario,comissao) values
 ('Eleuterio Quispe', '3500.00','20.00'),
@@ -74,7 +74,7 @@ insert into vendedor (nome_vend,salario,comissao) values
 ('Ricardo Arjona', '4500.00', '5.00'),
 ('Fidel Castro', '4500.00', '5.00');
 
---select * from vendedor;
+select * from vendedor;
 
 insert into produto(unidade,descricao,val_unit) values
 ('un','notebooke',3500.00),
@@ -102,7 +102,7 @@ insert into pedido(id_cli, id_vendedor, prazo_entrega) values
 (4, 3, '2021-10-28'),
 (5, 4, '2021-10-29');
 
---select * from pedido;
+select * from pedido;
 
 insert into itens_pedido (fk_num_pedido, fk_id_produto, quantidade) values
 (1, 3, 2),
@@ -112,4 +112,62 @@ insert into itens_pedido (fk_num_pedido, fk_id_produto, quantidade) values
 (5, 5, 500);
 
 
+--Quantidade de vendedores na tabela de vendedores
+select count(*) as 'Quantidade de vendedores' from vendedor;
+
+--Buscar o cliente da cidade de São Paulo
+select * from cliente where cidade_cli = 'São Paulo';
+
+--select * from cliente where cidade_cli in('São Paulo') - outra forma de uso;
+
+--buscar o cliente com o nome que inicia na letra B
+
+select * from cliente where nome_cli like 'B%';
+
+
+
+
+select * 
+--tabela com os relacionamentos (foreign key)
+from pedido
+--segunda tabela
+inner join cliente on pedido.id_cli = cliente.id_cli
+--terceira tabela
+inner join vendedor 
+on pedido.id_vendedor = vendedor.id_vendedor ;
+
+--Mostrar cliente, vendedor, prazo de entrega
+
+select c.nome_cli,v.nome_vend, p.prazo_entrega
+--tabela com os relacionamentos (foreign key)
+from pedido as p
+--segunda tabela
+inner join cliente as c on p.id_cli = c.id_cli
+--terceira tabela
+inner join vendedor as v
+on p.id_vendedor = v.id_vendedor 
+--com condição
+where nome_cli = 'Andre Fonseca' and prazo_entrega > '2021-10-22';
+
+-- mostrar por ondem de entrega
+select c.nome_cli,v.nome_vend, p.prazo_entrega
+from pedido as p
+inner join cliente as c on p.id_cli = c.id_cli
+inner join vendedor as v
+on p.id_vendedor = v.id_vendedor 
+order by p.prazo_entrega asc; -- pode ser desc para ordem descendente
+
+
+
+select * from pedido;
+
+update vendedor set salario = 2000 where id_vendedor = 3;
+
+update vendedor set comissao = 10 where comissao =5.00;
+
+delete from vendedor where id_vendedor=5;
+
+--deletando vendedor com restrição por estar  relacionado com outras tabelas
+
+delete from itens_pedido where fk_num_pedido = 5;
 

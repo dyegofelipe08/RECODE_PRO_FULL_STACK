@@ -1,0 +1,7 @@
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Aula 02\Exemplos-exercicios\Aula02\Aula02\bin\Debug\Aula02.exe.config
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Aula 02\Exemplos-exercicios\Aula02\Aula02\bin\Debug\Aula02.exe
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Aula 02\Exemplos-exercicios\Aula02\Aula02\bin\Debug\Aula02.pdb
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Aula 02\Exemplos-exercicios\Aula02\Aula02\obj\Debug\Aula02.csproj.AssemblyReference.cache
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Aula 02\Exemplos-exercicios\Aula02\Aula02\obj\Debug\Aula02.csproj.CoreCompileInputs.cache
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Aula 02\Exemplos-exercicios\Aula02\Aula02\obj\Debug\Aula02.exe
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Aula 02\Exemplos-exercicios\Aula02\Aula02\obj\Debug\Aula02.pdb

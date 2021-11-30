@@ -1,0 +1,16 @@
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\bin\Debug\net5.0\Fatorial.exe
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\bin\Debug\net5.0\Fatorial.deps.json
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\bin\Debug\net5.0\Fatorial.runtimeconfig.json
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\bin\Debug\net5.0\Fatorial.runtimeconfig.dev.json
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\bin\Debug\net5.0\Fatorial.dll
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\bin\Debug\net5.0\ref\Fatorial.dll
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\bin\Debug\net5.0\Fatorial.pdb
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\obj\Debug\net5.0\Fatorial.csproj.AssemblyReference.cache
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\obj\Debug\net5.0\Fatorial.GeneratedMSBuildEditorConfig.editorconfig
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\obj\Debug\net5.0\Fatorial.AssemblyInfoInputs.cache
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\obj\Debug\net5.0\Fatorial.AssemblyInfo.cs
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\obj\Debug\net5.0\Fatorial.csproj.CoreCompileInputs.cache
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\obj\Debug\net5.0\Fatorial.dll
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\obj\Debug\net5.0\ref\Fatorial.dll
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\obj\Debug\net5.0\Fatorial.pdb
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Fatorial\obj\Debug\net5.0\Fatorial.genruntimeconfig.cache

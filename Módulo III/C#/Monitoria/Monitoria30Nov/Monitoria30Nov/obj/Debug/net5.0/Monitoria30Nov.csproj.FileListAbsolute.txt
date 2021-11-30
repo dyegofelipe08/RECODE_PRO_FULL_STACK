@@ -1,0 +1,16 @@
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\obj\Debug\net5.0\Monitoria30Nov.csproj.AssemblyReference.cache
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\obj\Debug\net5.0\Monitoria30Nov.GeneratedMSBuildEditorConfig.editorconfig
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\obj\Debug\net5.0\Monitoria30Nov.AssemblyInfoInputs.cache
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\obj\Debug\net5.0\Monitoria30Nov.AssemblyInfo.cs
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\obj\Debug\net5.0\Monitoria30Nov.csproj.CoreCompileInputs.cache
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\bin\Debug\net5.0\Monitoria30Nov.exe
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\bin\Debug\net5.0\Monitoria30Nov.deps.json
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\bin\Debug\net5.0\Monitoria30Nov.runtimeconfig.json
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\bin\Debug\net5.0\Monitoria30Nov.runtimeconfig.dev.json
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\bin\Debug\net5.0\Monitoria30Nov.dll
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\bin\Debug\net5.0\ref\Monitoria30Nov.dll
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\bin\Debug\net5.0\Monitoria30Nov.pdb
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\obj\Debug\net5.0\Monitoria30Nov.dll
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\obj\Debug\net5.0\ref\Monitoria30Nov.dll
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\obj\Debug\net5.0\Monitoria30Nov.pdb
+E:\DEV SISTEMAS\CURSOS\FULL STACK RECODE PRO\RECODE_PRO_FULL_STACK\Módulo III\C#\Monitoria\Monitoria30Nov\Monitoria30Nov\obj\Debug\net5.0\Monitoria30Nov.genruntimeconfig.cache
