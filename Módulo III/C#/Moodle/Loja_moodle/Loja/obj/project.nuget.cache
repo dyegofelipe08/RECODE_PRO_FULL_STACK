@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "dgSpecHash": "gw8q1d+0FkxiAlmvQCS1nuLCDUM8ltb6/rYG4w4gOLt9s+43JC9oSLnP1Yv7wx7tXhLgu7WG0P7orudyNXQxMQ==",
+  "success": false,
+  "projectFilePath": "e:\\DEV SISTEMAS\\CURSOS\\FULL STACK RECODE PRO\\RECODE_PRO_FULL_STACK\\Módulo III\\C#\\Moodle\\Loja_moodle\\Loja\\Loja.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation. Não existe nenhum pacote com esta ID nas origens: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.EntityFrameworkCore.SqlServer. Não existe nenhum pacote com esta ID nas origens: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.EntityFrameworkCore.Tools. Não existe nenhum pacote com esta ID nas origens: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.EntityFrameworkCore.Tools",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.VisualStudio.Web.CodeGeneration.Design. Não existe nenhum pacote com esta ID nas origens: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}
