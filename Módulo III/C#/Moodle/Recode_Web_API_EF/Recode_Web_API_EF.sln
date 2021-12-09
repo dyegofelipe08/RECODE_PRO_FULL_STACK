@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recode_Web_API_EF", "Recode_Web_API_EF\Recode_Web_API_EF.csproj", "{6922870E-A7AA-4ADC-AEC7-AE06243F69C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6922870E-A7AA-4ADC-AEC7-AE06243F69C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6922870E-A7AA-4ADC-AEC7-AE06243F69C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6922870E-A7AA-4ADC-AEC7-AE06243F69C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6922870E-A7AA-4ADC-AEC7-AE06243F69C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3907E43C-930B-455B-B445-29EA73CC6948}
+	EndGlobalSection
+EndGlobal

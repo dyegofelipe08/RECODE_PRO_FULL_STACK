@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "t4PhF/EEeHHf4dBdNBDvpgsZocarpgWZgxgJLTc//19gXxXIvqDtTgC6I9P4WNranVKudOMv3okaherBRS1ABQ==",
+  "success": false,
+  "projectFilePath": "E:\\DEV SISTEMAS\\CURSOS\\FULL STACK RECODE PRO\\RECODE_PRO_FULL_STACK\\Módulo III\\C#\\Aula 05\\FilmesStudio\\FilmesStudio\\FilmesStudio.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation. Não existe nenhum pacote com esta ID nas origens: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

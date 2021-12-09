@@ -1,0 +1,35 @@
+Pacotes para utilizar DB SqlServer:
+dotnet add package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation --version 5.0.8
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.8
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.8
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 5.0.2
+
+Pacotes para utilizar DB Mysql:
+
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 5.0.0-alpha.2
+
+JSON Para conexão com MySql: 
+"ConexaoMySql": {
+
+    "MySqlConnectionString": "Server=localhost; DataBase=nomedodatabase; Uid=root;Pwd=7154"
+
+  }
+
+
+JSON Para conexão com SQLServer (com senha)
+
+"ConnectionStrings": {
+
+    "ConnDB": "nomeDoServidor; Database=NomeDaDataBase; User ID=sa; Password=8080; Trusted_Connection=false; MultipleActiveResultSets=true"
+
+  },
+
+
+Para conectar sem digitar senha:
+
+"ConnDB": "Data Source=LAPTOP-Q8IBDM5O;Initial Catalog=FilmesMVC; Integrated Security=True"
+
+
+Link para configurar origem de pacotes como Nuget.org:
+
+https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/

@@ -1,0 +1,23 @@
+
+1ro. add os packotes para SQL Server
+
+dotnet add package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation --version 5.0.8
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.8
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.8
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 5.0.2
+
+2do. add os packotes para MySQL
+
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 5.0.0-alpha.2
+dotnet add package Pomelo.EntityFrameworkCore.MySql.Design
+
+
+Para migrations
+
+instalar
+dotnet tool install --global dotnet-ef
+
+comando para migracao
+
+dotnet ef migrations add nomeQualquer
+dotnet ef database update
