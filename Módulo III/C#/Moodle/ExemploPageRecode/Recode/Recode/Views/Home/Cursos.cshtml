@@ -1,10 +1,11 @@
 ﻿@model IEnumerable<Recode.Models.Curso>
+
 @{
     ViewData["Title"] = "Nossos Cursos";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Conehça nossas formações</p>
+<p>Conheça nossas formações</p>
 <table class="table">
     <thead>
         <tr>
@@ -20,10 +21,21 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var item in Model)
-            {
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CargaHoraria)
+                </td>
+            </tr>
 
-            }
+        }
 
     </tbody>
 

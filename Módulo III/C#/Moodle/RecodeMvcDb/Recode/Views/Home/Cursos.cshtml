@@ -1,0 +1,43 @@
+﻿
+@model IEnumerable<Recode.Models.Curso>
+
+@{
+    ViewData["Title"] = "Nossos Cursos";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Conheça nossas formações</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CargaHoraria)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CargaHoraria)
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+
+</table>

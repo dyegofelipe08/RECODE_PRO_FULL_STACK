@@ -1,0 +1,5 @@
+ public LojaDbContext(DbContextOptions<LojaDbContext> opt): base(opt) { }
+
+        public DbSet<Cliente> Cliente { get; set; }
+        public DbSet<Produto> Produto { get; set; }
+        public DbSet<Pedido> Pedido { get; set; }

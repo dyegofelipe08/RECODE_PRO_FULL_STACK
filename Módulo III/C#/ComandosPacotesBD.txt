@@ -2,7 +2,12 @@ Pacotes para utilizar DB SqlServer:
 dotnet add package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation --version 5.0.8
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.8
 dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.8
-dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 5.0.2
+
+usar no final do projeto(no vs code):
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 5.0.2 - para gerar as views automaticamente 
+dotnet aspnet-codegenerator --project "" controller --force --controllerName AutorController --model Bookstore.Models.Autor
+--dataContext Bookstore.Data.LivroContext --relativeFolderPath Controllers --controllerNamespace Bookstore.Controllers
+
 
 Pacotes para utilizar DB Mysql:
 

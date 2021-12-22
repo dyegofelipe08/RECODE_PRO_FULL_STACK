@@ -1,0 +1,30 @@
+﻿@model IEnumerable<LojaMVC2.Models.Produto>
+
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+@foreach (var item in Model)
+{
+    <div class="d-flex">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="@Html.DisplayFor(modelItem => item.Url)" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">@Html.DisplayFor(modelItem => item.nomeProduto)</h5>
+                <p class="card-text">Preço: @Html.DisplayFor(modelItem => item.precoUnitario)</p>
+                <a asp-controller="Pedido" asp-action="Create" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+
+    </div>
+
+}
+

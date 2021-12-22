@@ -1,0 +1,2 @@
+ services.AddDbContext<LojaDbContext>(opt =>
+            opt.UseSqlServer(Configuration.GetConnectionString("ConnDB")));

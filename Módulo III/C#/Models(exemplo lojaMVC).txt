@@ -1,0 +1,36 @@
+public class Cliente
+    {
+        [Key]
+        [Required]
+        public int idCliente { get; set; }
+        [Required(ErrorMessage ="Informe seu nome!")]
+        public string Nome { get; set; }
+        [Required(ErrorMessage = "Informe seu CPF!")]
+        public string Cpf { get; set; }
+    }
+
+ public class Pedido
+    {
+        [Key] 
+        [Required]
+        public int idPedido { get; set; }
+        [Required]
+        public Cliente Cliente { get; set; }
+        [Required]
+        public Produto Produto { get; set; }
+
+    }
+
+
+public class Produto
+    {
+        [Key]
+        public int IdProduto { get; set; }
+        [Required]
+        public string nomeProduto { get; set; }
+        [Required]
+        public decimal precoUnitario { get; set; }
+        
+        
+
+    }
