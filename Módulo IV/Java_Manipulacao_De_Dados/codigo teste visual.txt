@@ -1,0 +1,5 @@
+float nota1, nota2, med;
+nota1 = Float.parseFloat(jTextField1.getText());
+nota2 = Float.parseFloat(jTextField2.getText());
+med = (nota1+nota2)/2;
+jTextField3.setText(String.valueOf(med));

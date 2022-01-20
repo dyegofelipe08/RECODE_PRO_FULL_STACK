@@ -1,0 +1,366 @@
+
+Link para download do drive JDBC para SQLServer:
+https://docs.microsoft.com/pt-br/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15
+-------------------------------------------------------------------------------------
+- Crie uma tabela de Contatos usando o script DDL.
+
+	create database crud;
+
+	use crud;
+
+	create table Contatos(
+		Id int not null primary key identity(1,1),
+		Nome varchar(40),
+		Idade int,
+		DataCadastro date
+	);
+
+	select * from Contatos;
+
+-------------------------------------------------------------------------------------
+- Clique com o botão direito no projeto
+- Vá em Build Path 
+- Clique em Configure Build Path.
+- Clique na aba libraries
+- Clique em add External Jars
+- Selecione o driver JDBC
+- Clique em ok.
+-------------------------------------------------------------------------------------
+Estabelecer Conexão com o Banco de Dados:
+- Crie um pacote br.com.crud.factory
+- Crie uma classe ConnectionFactory no pacote
+
+package br.com.crud.factory;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class ConnectionFactory {
+		
+	public static Connection createConnectionSQLServer() throws Exception {
+		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver"); // Faz com que a classe seja carregada pela JVM
+			
+		// Cria a conexão com o banco de dados ----------------------- SEM senha
+		Connection connection = DriverManager.getConnection(
+			"jdbc:sqlserver://LAPTOP-1CT7LGRM;instanceName=MSSQLSERVER;integratedSecurity=true;databaseName=crud;");
+			
+		// Cria a conexão com o banco de dados ----------------------- COM senha
+		// Connection connection = DriverManager.getConnection(
+				// "jdbc:sqlserver://LAPTOP-1CT7LGRM;instanceName=MSSQLSERVER;databaseName=crud;", "usuario", "senha");
+		
+		return connection;
+	}
+	public static void main(String[] args) throws Exception{
+		// Recupera uma conexão com o banco de dados
+		Connection con = createConnectionSQLServer();
+		// Testa se a conexão é nula
+		if (con != null) {
+			System.out.println("Conexão obtida com sucesso! " + con);
+			con.close();
+		}
+	}
+}
+		
+
+Observação: Se caso der erro
+Vai em Sql Server Configuration Manager.
+Indo em Configuração de rede do SQL Server, Tem que habilitar o TCP/IP do servidor local.
+Depois clica com direito no TCP/IP vai em propriedades e na aba endereços IP vai no 127.0.0.1
+e tem que deixar ativo e habilitado.
+Após isso tem que reiniciar o servidor indo em "Serviços do SQL Server" e no SQL server
+clica com o direito e clica em reiniciar.
+tambm tem que copiar a dll de autenticação do drive JDBC SqlServer no system32.
+-------------------------------------------------------------------------------------
+- Crie o pacote br.com.crud.model
+- Crie uma classe chamada Contato no pacote
+
+package br.com.crud.model;
+
+import java.util.Date;
+
+public class Contato {
+	
+	private int id;
+	private String nome;
+	private int idade;
+	private Date dataCadastro;
+	
+	public int getId() {
+		return id;	
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public String getNome() {
+		return nome;	
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public int getIdade() {
+		return idade;	
+	}
+	
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+	
+	public Date getDataCadastro() {
+		return dataCadastro;	
+	}
+	
+	public void setDataCadastro(Date dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
+}
+
+-------------------------------------------------------------------------------------
+- Crie o pacote br.com.crud.dao
+- Crie uma classe chamada ContatoDAO no pacote
+
+package br.com.crud.dao;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.crud.factory.ConnectionFactory;
+import br.com.crud.model.Contato;
+
+public class ContatoDAO {
+	
+	public void save(Contato contato) {
+		/*
+		 * Isso é uma sql comum, os ? são os parâmetros que nós vamos adicionar na base
+		 * de dados
+		 */
+
+		String sql = "INSERT INTO Contatos(Nome, Idade, DataCadastro)" + "VALUES(?,?,?)";
+
+		Connection conn = null;
+		PreparedStatement pstm = null;
+
+		try {
+			// Cria uma conexão com o banco
+			conn = ConnectionFactory.createConnectionSQLServer();
+
+			// Cria um PreparedStatement, classe usada para executar a query
+			pstm = conn.prepareStatement(sql);
+
+			// Adicionar o valor do primeiro parámetro da sql
+			pstm.setString(1, contato.getNome());
+
+			// Adicionar o valor do segundo parâmetro da sql
+			pstm.setInt(2, contato.getIdade());
+
+			// Adicionar o valor do terceiro parâmetro da sql
+			pstm.setDate(3, new Date(contato.getDataCadastro().getTime()));
+
+			// Executar a sql para inserção dos dados
+			pstm.execute();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			// fecha as conexões
+			try {
+				if (pstm != null) {
+					pstm.close();
+				}
+				if (conn != null) {
+					conn.close();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public void removeById(int id) {
+		String sql = "DELETE FROM Contatos WHERE Id = ?";
+
+		Connection conn = null;
+		PreparedStatement pstm = null;
+
+		try {
+			conn = ConnectionFactory.createConnectionSQLServer();
+
+			pstm = conn.prepareStatement(sql);
+
+			pstm.setInt(1, id);
+
+			pstm.execute();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (pstm != null) {
+					pstm.close();
+				}
+
+				if (conn != null) {
+					conn.close();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public void update(Contato contato) {
+		String sql = "UPDATE Contatos SET Nome = ?, Idade = ?, DataCadastro = ? WHERE id = ?";
+
+		Connection conn = null;
+		PreparedStatement pstm = null;
+
+		try {
+			// Cria uma conexão com o banco
+			conn = ConnectionFactory.createConnectionSQLServer();
+
+			// Cria um PreparedStatement, classe usada para executar a query
+			pstm = conn.prepareStatement(sql);
+
+			// Adiciona o valor do primeiro parâmetro da sql
+			pstm.setString(1, contato.getNome());
+
+			// Adicionar o valor do segundo parâmetro da sql
+			pstm.setInt(2, contato.getIdade());
+
+			// Adicionar o valor do terceiro parâmetro da sql
+			pstm.setDate(3, new Date(contato.getDataCadastro().getTime()));
+
+			pstm.setInt(4, contato.getId());
+
+			// Executa a sql para inserção dos dados
+			pstm.execute();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			// Fecha as conexões
+			try {
+				if (pstm != null) {
+					pstm.close();
+				}
+				if (conn != null) {
+					conn.close();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public List<Contato> getContatos() {
+
+		String sql = "SELECT * FROM Contatos";
+
+		List<Contato> contatos = new ArrayList<Contato>();
+
+		Connection conn = null;
+		PreparedStatement pstm = null;
+
+		// Classe que vai recuperar os dados do banco de dados
+		ResultSet rset = null;
+
+		try {
+			conn = ConnectionFactory.createConnectionSQLServer();
+
+			pstm = conn.prepareStatement(sql);
+
+			rset = pstm.executeQuery();
+
+			// Enquanto existir dados no banco de dados, faça
+			while (rset.next()) {
+				Contato contato = new Contato();
+
+				// Recupera o id do banco e atribui ele ao objeto
+				contato.setId(rset.getInt("Id"));
+
+				// Recupera o nome do banco e atribui ele ao objeto
+				contato.setNome(rset.getString("Nome"));
+
+				// Recupera a idade do banco e atribui ele ao objeto
+				contato.setIdade(rset.getInt("Idade"));
+
+				// Recupera a data do banco e atribui ela ao objeto
+				contato.setDataCadastro(rset.getDate("DataCadastro"));
+
+				// Adiciona o contato recuperado, a lista de contatos
+				contatos.add(contato);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (rset != null) {
+					rset.close();
+				}
+				if (pstm != null) {
+					pstm.close();
+				}
+				if (conn != null) {
+					conn.close();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return contatos;
+	}
+}
+
+-------------------------------------------------------------------------------------
+Pronto criamos todos os métodos para realizar as operações de CRUD!
+
+Agora, basta usá-los. 
+
+Para isso, crie uma classe chamada Teste na raiz do seu projeto e digite o código abaixo.
+
+import java.util.Date;
+
+import br.com.crud.dao.ContatoDAO;
+import br.com.crud.model.Contato;
+
+public class TesteCrud {
+
+	public static void main(String[] args) {
+		ContatoDAO contatoDAO = new ContatoDAO();
+		
+		// Cria um contato e salva no banco
+		Contato contato = new Contato();
+		contato.setNome("Izadora");
+		contato.setIdade(25);
+		contato.setDataCadastro(new Date());
+		
+		contatoDAO.save(contato);
+		
+		// Atualiza o contato com id = 1 com os dados do objeto contato1
+		/*Contato contato1 = new Contato();
+		contato1.setId(1);
+		contato1.setNome("Izadora");
+		contato1.setIdade(25);
+		contato1.setDataCadastro(new Date());
+		
+		contatoDAO.update(contato1);*/
+		
+		// Remove o contato com id = 1
+		// contatoDAO.removeById(2);
+		
+		// Lista todos os contatos do banco de dados
+		for (Contato c : contatoDAO.getContatos()) {
+			System.out.println("Nome: " + c.getNome());
+		}
+	}
+}
+
+-------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------

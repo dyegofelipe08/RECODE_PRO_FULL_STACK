@@ -1,0 +1,3 @@
+Relacionamentos muito-para-muitos - Nova Tabela com as duas chaves estrangeiras (Aula e Aluno)
+Relacionamento um-pra-um - As duas tabelas recebem a chave estrangeira(Aluno e Conjuge)
+Relacionamento um-para-muitos - A tabela que está com cardinalidade muitos recebe a chave estranngeira ds tabela com cardinalidade 1 (Um curso com vários módulos)
